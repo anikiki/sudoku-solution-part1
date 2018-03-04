@@ -48,9 +48,9 @@ class SudokuGame {
 
     // ## STEP_4 ##
     fun isSolved(): Boolean {
-        visibleElements.forEach {
-            it.forEach {
-                if (!it) {
+        visibleElements.forEach { array ->
+            array.forEach { element ->
+                if (!element) {
                     return false
                 }
             }
